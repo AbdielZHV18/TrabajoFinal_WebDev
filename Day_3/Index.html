@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Login Form</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      margin: 0;
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .nav-tabs {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .login-container {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+
+    .login-container input[type="button"] {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      width: 100%;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-container input[type="button"]:hover {
+      background-color: #0056b3;
+    }
+
+    .register-link {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .register-link a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .register-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <ul class="nav nav-tabs" id="navId">
+    <li class="nav-item">
+        <a href="../mainPage.html"class="nav-link click" target="_blank">Home Page</a>
+    </li>
+    <li class="nav-item">
+        <a href="../Day_1/index.html" class="nav-link click" target="_blank">Day 1</a>
+    </li>
+    <li class="nav-item">
+        <a href="../Day_2/index.html" class="nav-link click" target="_blank">Day 2</a>
+    </li>
+    <li class="nav-item">
+        <a href="../Day_3/index.html" class="nav-link click" target="_blank">Day 3</a>
+    </li>
+    <li class="nav-item">
+        <a href="../Day_4/index.html" class="nav-link click" target="_blank">Day 4</a>
+    </li>
+    <li class="nav-item">
+        <a href="../Day_5/index.html" class="nav-link active" target="_blank">Day 5</a>
+    </li>
+</ul>
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="#" method="post">
+      <input type="text" name="username" id="username_txtbox" placeholder="Username" required>
+      <input type="password" name="password" id="password_txtbox" placeholder="Password" required>
+      <input type="button" value="Confirmation" onclick="confirm_messagebox()">
+    </form>
+    <div class="register-link">
+      Don't have an account? <a href="#">Register</a>
+    </div>
+  </div>
+
+  <script>
+    function confirm_messagebox() {
+      var username_value = document.getElementById("username_txtbox").value;
+      var password_value = document.getElementById("password_txtbox").value;
+
+      if (!username_value || !password_value) {
+        alert("Invalid Response");
+        return;
+      }
+      alert("Thank you");
+    }
+  </script>
+</body>
+</html>

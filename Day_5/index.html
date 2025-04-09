@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Day_5</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <ul class="nav nav-tabs" id="navId">
+            <li class="nav-item">
+                <a href="../Day_1/index.html" class="nav-link click" target="_blank">Day 1</a>
+            </li>
+            <li class="nav-item">
+                <a href="../Day_2/index.html" class="nav-link click" target="_blank">Day 2</a>
+            </li>
+            <li class="nav-item">
+                <a href="../Day_3/index.html" class="nav-link click" target="_blank">Day 3</a>
+            </li>
+            <li class="nav-item">
+                <a href="../Day_4/index.html" class="nav-link click" target="_blank">Day 4</a>
+            </li>
+            <li class="nav-item">
+                <a href="../Day_5/index.html" class="nav-link active" target="_blank">Day 5</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Navigation Bar -->
+
+    
+    <h1>Library Home Page</h1>
+
+    <div class="search">
+        <h2>Book:</h2>
+        <input type="text" class="form-control" id="Book_Searched" placeholder="Programming in Visual Basic">
+        <button class="btn btn-light" onclick="SearchBook()">Enter</button><br>
+        <p>Please write down and give this code to the library personal on site.</p>
+        <h2 class="book_code_label" id="book-title-label"></h2>
+    </div>
+   <div class="schedule">
+    <h2>Library Schedule</h2>
+    <table>
+        <tr>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturdat</th>
+        </tr>
+        <tr>
+            <td>closed</td>
+            <td>8:00 am - 8:00 pm</td>
+            <td>8:00 am - 8:00 pm</td>
+            <td>8:00 am - 8:00 pm</td>
+            <td>8:00 am - 8:00 pm</td>
+            <td>8:00 am - 5:00 pm</td>
+            <td>10:00 am - 4:00 pm</td>
+
+        </tr>
+    </table>
+    <p>This schedule is a general guideline of availability. If you wish to check if the current schedule please contact: 939-277-2777 </p>
+   </div>
+
+    <script>
+        $('#navId a').click(e => {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+</body>
+</html>
